@@ -13,9 +13,7 @@ foreach .() {
 		'    </node>' newline
 		
 		variable 'edges' append
-			do >() {
-				'    <edge id="' oid;2 '_' oid '" source="' @path '_' oid;2 '" target="' @path '_' oid;2 '_' oid;1 '" label=":HasPort"><data key="label">:HasPort</data></edge>' newline			
-			}
+				'    <edge id="' oid;1 '_' oid '" source="' @path '_' oid;1 '" target="' @path '_' oid;1 '_' oid; '" label=":HasPort"><data key="label">:HasPort</data></edge>' newline				
 		close
 	}
 
