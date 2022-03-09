@@ -4,13 +4,13 @@ _graphMLmetaKeys()
 if not $visited =~ oid%wildnl then
 	variable 'visited' append oid newline close
 	foreach .() {
-		do :() where not containers =~ '__*' {
+		do :() {
 			@keyValue = containers
 			'  <key id="' type;1%var @keyValue%var '" for="node" attr.name="' @keyValue%var '"/>' newline
 		}
 	}
 	foreach >() {
-		do :() where not containers =~ '__*' {
+		do :() {
 			@keyValue = containers
 			'  <key id="' type;1%var @keyValue%var '" for="node" attr.name="' @keyValue%var '"/>' newline
 		}
