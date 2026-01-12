@@ -2,7 +2,6 @@ _graphMLattributes()
 
 do :() {
 	@keyValue = containers
-	if id then /* properties without values are not exported */
-		'      <data key="' type;1%var  @keyValue%var '">' id%xml '</data>' newline
-	endif
+	'      <data key="' type;1%var  @keyValue%var '">' id%xml '</data>' newline
 }
+
